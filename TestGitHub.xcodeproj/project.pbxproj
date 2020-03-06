@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96956BE62411ECB0001F43B3 /* goodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96956BE52411ECB0001F43B3 /* goodModel.m */; };
+		96956BE92411EFBF001F43B3 /* GoodViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96956BE82411EFBF001F43B3 /* GoodViewModel.m */; };
+		96956BED2411F1D1001F43B3 /* GoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96956BEB2411F1D1001F43B3 /* GoodCell.m */; };
+		96956BEE2411F1D1001F43B3 /* GoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96956BEC2411F1D1001F43B3 /* GoodCell.xib */; };
 		96CB95E2240FEA6C00CD606F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CB95E1240FEA6C00CD606F /* AppDelegate.m */; };
 		96CB95E5240FEA6C00CD606F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CB95E4240FEA6C00CD606F /* SceneDelegate.m */; };
 		96CB95E8240FEA6C00CD606F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CB95E7240FEA6C00CD606F /* ViewController.m */; };
@@ -36,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96956BE42411ECB0001F43B3 /* goodModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = goodModel.h; sourceTree = "<group>"; };
+		96956BE52411ECB0001F43B3 /* goodModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goodModel.m; sourceTree = "<group>"; };
+		96956BE72411EFBF001F43B3 /* GoodViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodViewModel.h; sourceTree = "<group>"; };
+		96956BE82411EFBF001F43B3 /* GoodViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodViewModel.m; sourceTree = "<group>"; };
+		96956BEA2411F1D1001F43B3 /* GoodCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodCell.h; sourceTree = "<group>"; };
+		96956BEB2411F1D1001F43B3 /* GoodCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodCell.m; sourceTree = "<group>"; };
+		96956BEC2411F1D1001F43B3 /* GoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodCell.xib; sourceTree = "<group>"; };
 		96CB95DD240FEA6C00CD606F /* TestGitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CB95E0240FEA6C00CD606F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96CB95E1240FEA6C00CD606F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96956BE32411EA18001F43B3 /* MVVMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				96956BE72411EFBF001F43B3 /* GoodViewModel.h */,
+				96956BE82411EFBF001F43B3 /* GoodViewModel.m */,
+				96956BEA2411F1D1001F43B3 /* GoodCell.h */,
+				96956BEB2411F1D1001F43B3 /* GoodCell.m */,
+				96956BEC2411F1D1001F43B3 /* GoodCell.xib */,
+				96956BE42411ECB0001F43B3 /* goodModel.h */,
+				96956BE52411ECB0001F43B3 /* goodModel.m */,
+			);
+			path = MVVMDemo;
+			sourceTree = "<group>";
+		};
 		96CB95D4240FEA6C00CD606F = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +129,7 @@
 		96CB95DF240FEA6C00CD606F /* TestGitHub */ = {
 			isa = PBXGroup;
 			children = (
+				96956BE32411EA18001F43B3 /* MVVMDemo */,
 				96CB95E0240FEA6C00CD606F /* AppDelegate.h */,
 				96CB95E1240FEA6C00CD606F /* AppDelegate.m */,
 				96CB95E3240FEA6C00CD606F /* SceneDelegate.h */,
@@ -242,6 +268,7 @@
 			files = (
 				96CB95F0240FEA7100CD606F /* LaunchScreen.storyboard in Resources */,
 				96CB95ED240FEA7100CD606F /* Assets.xcassets in Resources */,
+				96956BEE2411F1D1001F43B3 /* GoodCell.xib in Resources */,
 				96CB95EB240FEA6C00CD606F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,9 +295,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CB95E8240FEA6C00CD606F /* ViewController.m in Sources */,
+				96956BE62411ECB0001F43B3 /* goodModel.m in Sources */,
 				96CB95E2240FEA6C00CD606F /* AppDelegate.m in Sources */,
+				96956BE92411EFBF001F43B3 /* GoodViewModel.m in Sources */,
 				96CB95F3240FEA7100CD606F /* main.m in Sources */,
 				96CB95E5240FEA6C00CD606F /* SceneDelegate.m in Sources */,
+				96956BED2411F1D1001F43B3 /* GoodCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

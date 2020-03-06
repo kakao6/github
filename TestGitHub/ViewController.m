@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "GoodCell.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -17,11 +19,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+    //self.view.backgroundColor = [UIColor redColor];
+    //self.view.backgroundColor = [UIColor greenColor];
+    [self.tableView registerNib:[UINib nibWithNibName:@"GoodCell" bundle:nil] forCellReuseIdentifier:@"GoodCell"];
+    self.tableView.rowHeight = 110;
     
-    
-    self.view.backgroundColor = [UIColor greenColor];
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 3;
+}
+
+// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    GoodCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GoodCell" forIndexPath:indexPath];
+    return cell;
+}
 
 @end
