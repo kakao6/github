@@ -27,6 +27,7 @@
     NSLog(@"为当前版本打tag");
     NSLog(@"ttttttt");
     NSLog(@"jiejuebug");
+    NSLog(@"jiejiebug22222");
 
 }
 
