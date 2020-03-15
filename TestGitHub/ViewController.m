@@ -23,7 +23,7 @@
     //self.view.backgroundColor = [UIColor greenColor];
     [self.tableView registerNib:[UINib nibWithNibName:@"GoodCell" bundle:nil] forCellReuseIdentifier:@"GoodCell"];
     self.tableView.rowHeight = 110;
-    
+    NSLog(@"clone项目first");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
