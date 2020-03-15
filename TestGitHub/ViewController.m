@@ -23,6 +23,8 @@
     //self.view.backgroundColor = [UIColor greenColor];
     [self.tableView registerNib:[UINib nibWithNibName:@"GoodCell" bundle:nil] forCellReuseIdentifier:@"GoodCell"];
     self.tableView.rowHeight = 110;
+    NSLog(@"为当前版本打tag");
+    NSLog(@"ttttttt");
     
 }
 
