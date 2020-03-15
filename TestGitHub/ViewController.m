@@ -24,6 +24,10 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"GoodCell" bundle:nil] forCellReuseIdentifier:@"GoodCell"];
     self.tableView.rowHeight = 110;
     NSLog(@"clone项目first");
+    NSLog(@"为当前版本打tag");
+    NSLog(@"ttttttt");
+    
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
