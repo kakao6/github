@@ -28,7 +28,7 @@
     NSLog(@"ttttttt");
     NSLog(@"jiejuebug");
     NSLog(@"jiejiebug22222");
-
+    NSLog(@"创建了新的版本库");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
