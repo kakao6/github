@@ -31,6 +31,8 @@
     NSLog(@"创建了新的版本库");
     NSLog(@"测试暂存");
     NSLog(@"yy test");
+    NSLog(@"--------yy");
+    NSLog(@"=======yyy");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
